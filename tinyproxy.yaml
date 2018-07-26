@@ -1,0 +1,7 @@
+init_config:
+    default_timeout: 5
+
+instances:
+    - host: localhost
+      port: 8888
+      stathost: tinyproxy.stats
