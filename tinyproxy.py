@@ -13,7 +13,7 @@ DEFAULT_TIMEOUT = 1.0  # seconds
 
 class TinyproxyCheck(AgentCheck):
     def check(self, instance):
-        self.host = instance.get("hostname", DEFAULT_HOST)
+        self.host = instance.get("host", DEFAULT_HOST)
         self.port = int(instance.get("port", DEFAULT_PORT))
         self.stathost = instance.get("stathost", DEFAULT_STATHOST)
         self.timeout = float(instance.get('timeout', DEFAULT_TIMEOUT))
